@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c7eaff" />
+  <meta name="description" content="Self Affirming Words (SAW) — daily personalised affirmations, reasons and visual reminders." />
+  <title>Self Affirming Words (SAW)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="marketing" class="marketing">
+    <nav class="site-nav container">
+      <a class="brand" href="#top">SAW</a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#agent">SAW Agent</a>
+        <button id="openAppTop" class="nav-cta">Open app</button>
+      </div>
+    </nav>
+
+    <header id="top" class="hero container">
+      <div class="accent-bar violet"></div>
+      <p class="eyebrow">SELF AFFIRMING WORDS</p>
+      <h1>Words that bring you back to yourself.</h1>
+      <p class="hero-copy">
+        SAW combines daily affirmations, meaningful photos and personal reasons
+        to help people pause, refocus and reconnect with the change they want to make.
+      </p>
+      <div class="hero-actions">
+        <button id="openAppHero" class="primary-btn">Get started</button>
+        <a class="secondary-link" href="#how">See how it works</a>
+      </div>
+
+      <div class="phone-preview">
+        <div class="phone">
+          <div class="screen">
+            <div class="phone-bar coral"></div>
+            <p class="mini-label">TODAY</p>
+            <h3>Your words for today</h3>
+            <div class="demo-card coral-card">
+              <p class="mini-label coral-text">SAW AGENT · DAILY</p>
+              <p class="demo-affirmation">I choose the next healthy step. I can pause, breathe and move forward.</p>
+            </div>
+            <div class="demo-card teal-card">
+              <p class="mini-label teal-text">YOUR VISUAL REMINDER</p>
+              <div class="demo-photo"></div>
+              <p>Because I want to feel present with the people I love.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="how" class="section container">
+      <p class="eyebrow">HOW SAW WORKS</p>
+      <h2>One gentle routine. Four simple tools.</h2>
+      <div class="feature-grid">
+        <article class="feature coral-card">
+          <span>01</span><h3>Daily words</h3><p>Start each day with a personalised self-affirming message.</p>
+        </article>
+        <article class="feature teal-card">
+          <span>02</span><h3>Your reasons</h3><p>Save people, places and future moments that make change meaningful.</p>
+        </article>
+        <article class="feature blue-card">
+          <span>03</span><h3>Visual reminders</h3><p>Add your own photos and bring them back when you need perspective.</p>
+        </article>
+        <article class="feature violet-card">
+          <span>04</span><h3>Pause mode</h3><p>Breathe, speak and remember before deciding what to do next.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="agent" class="section container split">
+      <div>
+        <p class="eyebrow">SAW AGENT</p>
+        <h2>Daily words shaped around what matters to you.</h2>
+      </div>
+      <div class="agent-copy">
+        <p>
+          The SAW Agent uses the focus, tone and reasons you choose to save to create
+          a new daily affirmation. You remain in control of what is stored, regenerated or pinned.
+        </p>
+        <p class="note">
+          SAW is a motivational wellbeing prototype and is not presented as medical treatment,
+          addiction treatment, emergency support or a replacement for professional care.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <span>Self Affirming Words (SAW)</span>
+      <span>Design by Bethlehem Candle Markov · 8 November 2026</span>
+    </footer>
+  </div>
+
+  <div id="appShell" class="app-shell hidden">
+    <main class="app-frame">
+      <section id="loginView" class="app-page login-page">
+        <div class="screen-accent violet"></div>
+        <div class="center-column">
+          <p class="app-eyebrow">SELF AFFIRMING WORDS</p>
+          <h2>Welcome to SAW</h2>
+          <p class="app-sub">Sign in to keep your daily words, reasons and photos connected to your profile.</p>
+
+          <form id="loginForm" class="login-card">
+            <label>Email</label>
+            <input id="emailInput" type="email" placeholder="you@example.com" required />
+            <label>Password</label>
+            <input id="passwordInput" type="password" placeholder="••••••••" required />
+            <button type="submit" class="full-gradient-btn">Continue with email</button>
+            <div class="or-row"><span></span><em>or</em><span></span></div>
+            <button id="demoLogin" type="button" class="white-btn">Continue with Google or Apple</button>
+          </form>
+
+          <button id="backToSite" class="text-link-btn">Back to website</button>
+        </div>
+      </section>
+
+      <section id="todayView" class="app-page hidden">
+        <div class="screen-accent coral"></div>
+        <header class="app-header">
+          <p class="app-eyebrow coral-text">TODAY</p>
+          <h2>Your words for today</h2>
+          <p class="app-sub">A calm daily reminder generated from what matters to you.</p>
+        </header>
+
+        <article class="app-card coral-card">
+          <p class="mini-label coral-text">SAW AGENT · DAILY</p>
+          <blockquote id="dailyAffirmation">I choose the next healthy step. I can pause, breathe and act in line with the person I want to become.</blockquote>
+          <p id="agentMeta" class="muted">Personalised from your saved reasons, focus and preferred tone.</p>
+          <button id="newWordsBtn" class="card-action">Create new words</button>
+        </article>
+
+        <article class="app-card teal-card">
+          <p class="mini-label teal-text">YOUR VISUAL REMINDER</p>
+          <div id="featuredPhoto" class="photo-box">Your photo appears here</div>
+          <p id="featuredReason">Because I want to feel present with the people I love.</p>
+        </article>
+      </section>
+
+      <section id="wordsView" class="app-page hidden">
+        <div class="screen-accent yellow"></div>
+        <header class="app-header">
+          <p class="app-eyebrow yellow-text">AFFIRMATIONS</p>
+          <h2>Words I choose</h2>
+          <p class="app-sub">Save favourites or let SAW create a fresh message for the day.</p>
+        </header>
+
+        <form id="affirmationForm" class="app-card pale-card">
+          <label>Add your own affirmation</label>
+          <textarea id="affirmationInput" rows="3" placeholder="I choose..."></textarea>
+          <button class="full-gradient-btn" type="submit">Save affirmation</button>
+        </form>
+
+        <article class="app-card violet-card">
+          <p class="mini-label violet-text">SAW AGENT SETTINGS</p>
+          <label>Preferred tone</label>
+          <select id="toneSelect">
+            <option value="calm">Calm and encouraging</option>
+            <option value="strong">Strong and empowering</option>
+            <option value="gentle">Gentle and compassionate</option>
+          </select>
+          <label>Daily focus</label>
+          <input id="focusInput" placeholder="e.g. self-control, confidence, patience" />
+          <button id="saveAgentSettings" class="card-action" type="button">Save settings</button>
+        </article>
+
+        <div id="affirmationList" class="stack"></div>
+      </section>
+
+      <section id="reasonsView" class="app-page hidden">
+        <div class="screen-accent teal"></div>
+        <header class="app-header">
+          <p class="app-eyebrow teal-text">MY REASONS</p>
+          <h2>Remember why</h2>
+          <p class="app-sub">Keep the people, places and future moments that make change meaningful to you.</p>
+        </header>
+
+        <div id="reasonList" class="stack"></div>
+
+        <form id="reasonForm" class="app-card pale-card">
+          <label>Why do you want to make this change?</label>
+          <input id="reasonInput" placeholder="For my health and energy" />
+          <label>Add a photo</label>
+          <input id="photoInput" type="file" accept="image/*" />
+          <button class="full-gradient-btn teal-gradient" type="submit">Add a reason or photo</button>
+        </form>
+
+        <p class="small-note">Private by default. You control what SAW stores and uses.</p>
+      </section>
+
+      <section id="pauseView" class="app-page hidden">
+        <div class="screen-accent indigo"></div>
+        <header class="app-header">
+          <p class="app-eyebrow indigo-text">WHEN IT FEELS HARD</p>
+          <h2>Pause with SAW</h2>
+          <p class="app-sub">Use one short reset before deciding what to do next.</p>
+        </header>
+
+        <article class="app-card violet-card pause-card">
+          <div><strong>1 · Breathe</strong><p>Take one slow breath.</p></div>
+          <div><strong>2 · Speak</strong><p>“I can let this feeling pass without acting on it.”</p></div>
+          <div><strong>3 · Remember</strong><p id="pauseReason">Look at one saved image and one personal reason.</p></div>
+        </article>
+
+        <article class="app-card blue-card">
+          <h3>Need more support?</h3>
+          <p>Reach out to a trusted person or professional support when appropriate.</p>
+        </article>
+      </section>
+
+      <section id="profileView" class="app-page hidden">
+        <div class="screen-accent green"></div>
+        <header class="app-header">
+          <p class="app-eyebrow green-text">PROFILE</p>
+          <h2>Your SAW profile</h2>
+          <p class="app-sub">Manage your account and personal daily-word preferences.</p>
+        </header>
+
+        <article class="app-card blue-card">
+          <p class="mini-label indigo-text">EMAIL</p>
+          <p id="profileEmail">you@example.com</p>
+          <p class="mini-label indigo-text">DAILY FOCUS</p>
+          <p id="profileFocus">Self-control and confidence</p>
+          <p class="mini-label indigo-text">PREFERRED TONE</p>
+          <p id="profileTone">Calm and encouraging</p>
+        </article>
+
+        <article class="app-card teal-card">
+          <p>Edit email or password</p>
+          <p>Notification time</p>
+          <p>Privacy and data</p>
+          <p>Delete account</p>
+        </article>
+
+        <button id="logoutBtn" class="white-btn">Log out</button>
+        <p class="designer-credit">Design by Bethlehem Candle Markov · 8 November 2026</p>
+      </section>
+
+      <nav id="bottomNav" class="bottom-nav hidden">
+        <button data-view="todayView" class="active">Today</button>
+        <button data-view="wordsView">Words</button>
+        <button data-view="reasonsView">Reasons</button>
+        <button data-view="profileView">Profile</button>
+      </nav>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
